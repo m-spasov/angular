@@ -1,0 +1,60 @@
+.side-nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: -webkit-fill-available;
+  background-color: var(--secondary);
+  padding: 60px 40px;
+
+  h2 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 1.125rem;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  &__svg {
+    fill: var(--white);
+    color: var(--white);
+  }
+
+  &__button {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    color: var(--white);
+    padding: 12px 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__first {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  &__profile {
+    margin-top: auto;
+  }
+}

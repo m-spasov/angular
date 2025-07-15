@@ -1,0 +1,18 @@
+<a
+  [routerLink]="to"
+  class="side-nav__button"
+  (click)="changeActiveTab(text)"
+  routerLinkActive="active"
+  [class.active]="isActive"
+>
+  <svg-icon
+    src="images/sidebar/{{ svg }}.svg"
+    [svgStyle]="{
+        'width.px': 20,
+        'height.px': 20,
+        fill: 'var(--white)',
+      }"
+  >
+  </svg-icon>
+  <h4>{{ text }}</h4>
+</a>

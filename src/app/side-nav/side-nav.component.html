@@ -1,0 +1,22 @@
+<aside class="side-nav">
+  <div class="side-nav__top">
+    <img width="40" height="40" src="images/movie-logo.png" alt="site-logo" />
+    <h2>Movies</h2>
+  </div>
+  <div class="side-nav__buttons-wrapper side-nav__first">
+    <app-button to="/" [text]="'Dashboard'" [svg]="'dashboard'" />
+    <app-button to="/movies" [text]="'Movie'" [svg]="'movie'" />
+    <app-button to="/tvShow" [text]="'Tv Show'" [svg]="'tv-show'" />
+    <app-button to="/recommended" [text]="'Recomended'" [svg]="'recommended'" />
+    <app-button [text]="'Watchlist'" [svg]="'watching'" />
+    <app-button [text]="'Upcoming'" [svg]="'upcoming'" />
+    <app-button [text]="'Liked'" [svg]="'liked'" />
+  </div>
+  <div class="side-nav__buttons-wrapper">
+    <app-button [text]="'Settings'" [svg]="'settings'" />
+    <app-button [text]="'Log Out'" [svg]="'logout'" />
+  </div>
+  <div class="side-nav__profile">
+    <app-button [text]="'Profile'" [svg]="'profile'" />
+  </div>
+</aside>

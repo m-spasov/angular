@@ -1,0 +1,25 @@
+<div
+  #dropdownRef
+  class="dropdown"
+  (click)="toggleDropdown($event)"
+  [class.active]="isActive"
+>
+  <div class="dropdown__button">
+    {{ selectedItem() || text }}
+    <svg-icon
+      class="dropdown__icon"
+      src="images/arrow.svg"
+      [svgStyle]="{
+        'width.px': 17,
+        'height.px': 12,
+        fill: 'var(--white)',
+      }"
+    >
+    </svg-icon>
+  </div>
+  <div class="dropdown__content">
+    @for (item of items; track item) {
+    <div class="dropdown__item">{{ item }}</div>
+    }
+  </div>
+</div>

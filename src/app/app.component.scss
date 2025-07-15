@@ -1,0 +1,10 @@
+.main {
+  display: flex;
+  flex-direction: row;
+
+  &__content {
+    margin-left: 250px;
+    padding: 60px 40px;
+    width: 100%;
+  }
+}
