@@ -2,9 +2,35 @@
   <div class="dashboard__top">
     <h3>Overview</h3>
     <div class="dashboard__dropdowns">
+      <div>
+        <label for=""></label>
+        <input type="text" />
+      </div>
       <app-dropdown text="Select item" />
       <app-dropdown text="Select item" />
       <app-dropdown text="Select item" />
+      <app-dropdown text="Select item" />
+    </div>
+  </div>
+  <div class="dashboard__popular-wrapper">
+    <div class="dashboard__popular">
+      <h4 class="dashboard__popular-heading">Popular movies</h4>
+      <a class="dashboard__see-more"></a>
+    </div>
+    <div class="dashboard__popular-img-wrapper">
+      <app-popular-card />
+      <app-popular-card />
+      <app-popular-card />
+    </div>
+  </div>
+  <div class="dashboard__recomended">
+    <h4 class="dashboard__popular-heading">Recommended movies</h4>
+
+    <div class="dashboard__recomended-cards">
+      <app-recommended-card />
+      <app-recommended-card />
+      <app-recommended-card />
+      <app-recommended-card />
     </div>
   </div>
 </div>

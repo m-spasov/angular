@@ -9,6 +9,7 @@
   &__top {
     display: flex;
     flex-direction: row;
+    margin-bottom: 60px;
   }
 
   &__dropdowns {
@@ -16,5 +17,28 @@
     flex-direction: row;
     gap: 16px;
     margin-left: auto;
+  }
+
+  &__popular-wrapper {
+    margin-bottom: 80px;
+  }
+
+  &__popular-heading {
+    font-size: 1.4rem;
+    margin: 0 0 20px;
+  }
+
+  &__popular-img-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 3.33%;
+    min-height: 240px;
+  }
+
+  &__recomended-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
   }
 }
